@@ -13,8 +13,8 @@
     },
     {
       "name": "desktop",
-      "width": 1400,
-      "height": 900
+      "width": 1440,
+      "height": 1024
     }
   ],
   "readyEvent": null,
