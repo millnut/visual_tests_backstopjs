@@ -1,0 +1,12 @@
+# Dependency directories
+node_modules/
+
+# Mac DS_Store files
+.DS_Store
+**/.DS_Store
+
+# BackstopJS generated files
+backstop_data/bitmaps_reference/*
+backstop_data/bitmaps_test/*
+backstop_data/html_report/*
+!backstop_data/bitmaps_reference/.gitkeep

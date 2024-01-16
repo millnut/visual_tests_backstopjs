@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "backstop:init": "./node_modules/.bin/backstop init",
+    "backstop:reference": "./node_modules/.bin/backstop reference",
+    "backstop:test": "./node_modules/.bin/backstop test",
+    "backstop:approve": "./node_modules/.bin/backstop approve"
+  },
+  "dependencies": {
+    "backstopjs": "^6.3.3"
+  }
+}

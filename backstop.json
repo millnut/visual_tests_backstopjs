@@ -1,0 +1,50 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 667
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "desktop",
+      "width": 1400,
+      "height": 900
+    }
+  ],
+  "readyEvent": null,
+  "delay": 2000,
+  "misMatchThreshold" : 0.1,
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scrollToSelector": "[SELECT_LAST_ELEMENT_IN_DOM]",
+  "scenarios": [
+    {"label": "home1", "url": "https://www.example.com"},
+    {"label": "home2", "url": "https://www.example.com"},
+    {"label": "home3", "url": "https://www.example.com"},
+    {"label": "home4", "url": "https://www.example.com"},
+    {"label": "home5", "url": "https://www.example.com"},
+    {"label": "home6", "url": "https://www.example.com"}
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
